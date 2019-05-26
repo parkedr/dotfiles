@@ -23,6 +23,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'mattn/calendar-vim'
 
 
 " All of your Plugins must be added before the following line
