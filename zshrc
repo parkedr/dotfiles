@@ -111,6 +111,4 @@ if [[ "$HOST" = "Dallass-MBP.attlocal.net" ]]; then
 	export PATH=~/.gem/ruby/2.3.0/bin:$PATH
 	test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 	[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-else 
-	echo "No custom setup for $HOST\n"
 fi
