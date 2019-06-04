@@ -24,6 +24,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'mattn/calendar-vim'
+Plugin 'Rigellute/shades-of-purple.vim'
 
 
 " All of your Plugins must be added before the following line
@@ -31,8 +32,9 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 set hlsearch
-colorscheme torte
-syntax on
+set termguicolors
+syntax enable
+colorscheme shades_of_purple
 
 " I was having lag going from insert to normal mode (hitting ESC)
 " Setting the timeoutlen seems to have helped
@@ -89,7 +91,9 @@ map <Leader>k <Plug>(easymotion-k)
 
 " vim airline theme
 let g:airline_powerline_font = 1
-let g:airline_theme='base16_atelierdune'
+" let g:airline_theme='base16_atelierdune'
+let g:shades_of_purple_airline = 1
+let g:airline_theme='shades_of_purple'
 
 if !exists('g:airline_symbols')
 let g:airline_symbols = {}
