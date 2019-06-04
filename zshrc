@@ -1,3 +1,5 @@
+export VISUAL=vim
+export EDITOR="$VISUAL"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -103,11 +105,12 @@ alias cls='clear'
 alias grep='grep --color=auto'
 # command line markdown reader (ruby gem)
 alias md='mdless'
-# path for mdless (command line markdown viewer)
-export PATH=~/.gem/ruby/2.3.0/bin:$PATH
 
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+if [[ "$HOST" = "Dallass-MBP.attlocal.net" ]]; then
+	# path for mdless (command line markdown viewer)
+	export PATH=~/.gem/ruby/2.3.0/bin:$PATH
+	test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+	[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+else 
+	echo "No custom setup for $HOST\n"
+fi
