@@ -161,3 +161,6 @@ exec --no-startup-id nitrogen --restore
 bar {
         status_command i3status
 }
+
+gaps inner 10
+gaps outer 10
