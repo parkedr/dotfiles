@@ -106,6 +106,7 @@ alias grep='grep --color=auto'
 # command line markdown reader (ruby gem)
 alias md='mdless'
 alias weather='ansiweather -lHouston  -a false -s true -u imperial -h true -p false -d true'
+alias forecast='ansiweather -lHouston,US -F -u imperial -s true -a false'
 
 if [[ "$HOST" = "Dallass-MBP.attlocal.net" ]]; then
 	# path for mdless (command line markdown viewer)
