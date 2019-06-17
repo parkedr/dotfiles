@@ -162,5 +162,8 @@ bar {
         status_command i3status
 }
 
-gaps inner 10
-gaps outer 10
+gaps inner 5
+gaps outer 5
+
+exec --no-startup-id compton -b &> /tmp/compton.log
+
