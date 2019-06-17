@@ -60,8 +60,15 @@ highlight SpecialKey guifg=#4a4a59
 
 " Change cursor shape between insert and normal mode in iTerm2.app
 if $TERM_PROGRAM =~ "iTerm"
-    let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
-    let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7" " insert mode
+    let &t_SR = "\<Esc>]50;CursorShape=2\x7" " replace mode
+	let &t_EI = "\<Esc>]50;CursorShape=0\x7" " else mode
+else
+	" this should be good for VTE terminals (gnome-terminal,
+	" xterm,st,urxvt,etc)
+	let &t_SI = "\<Esc>[6 q"
+	let &t_SR = "\<Esc>[4 q"
+	let &t_EI = "\<Esc>[2 q"
 endif
 
 " vim wiki settings
