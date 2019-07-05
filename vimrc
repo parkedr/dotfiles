@@ -96,6 +96,9 @@ let g:EasyMotion_smartcase = 1
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
+
+set guifont=Hack-Regular:h11
+
 " vim airline theme
 let g:airline_powerline_font = 1
 " let g:airline_theme='base16_atelierdune'

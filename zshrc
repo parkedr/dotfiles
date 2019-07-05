@@ -71,6 +71,8 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+export CONDA_HOME=/usr/local/anaconda3
+export PATH=$PATH:$CONDA_HOME/bin
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
