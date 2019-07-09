@@ -1,4 +1,16 @@
 # vim swap files
 *.swp
+*/Code/logs/*
+*/Code/CachedData/*
+*/Code/Cache/*
+*/Code/CachedExtensions/*
+*/Code/Cookies/*
+*/Code/Cookies-journal/*
+*/Code/GPUCache/*
+*/Code/User/globalStorage/*
+*/Code/User/workspaceStorage/*
+*/pulse/*
+*/ibus/bus/*
+
 
 
