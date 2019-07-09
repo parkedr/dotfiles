@@ -5,11 +5,13 @@ export EDITOR="$VISUAL"
 
 # Path to your oh-my-zsh installation.
 export ZSH="${HOME}/.oh-my-zsh"
-#export ZSH="/Users/robparker/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+POWERLEVEL9K_MODE='nerdfont-complete'
+#POWERLEVEL9K_MODE='awesome-fontconfig'
+#ZSH_THEME="powerlevel9k/powerlevel9k"
 ZSH_THEME="random"
 #ZSH_THEME="agnoster"
 
@@ -69,6 +71,14 @@ plugins=(
   git
   brew
   osx
+  fzf
+#  colored-man-pages
+#  iterm2
+#  ubuntu
+#  vi-mode
+  bgnotify
+#  colorize
+  common-aliases
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -119,3 +129,7 @@ if [[ "$HOST" = "Dallass-MBP.attlocal.net" ]]; then
 	test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 	[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 fi
+
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
