@@ -32,7 +32,7 @@ local SM_MIDFIX="%F{default}├─ "
 local SM_SUFFIX="%F{default}╰───%F{default} ";
 local SM_USER="%F{$(sudo_color)}%n%F{white}@%m";
 local SM_DIR="%F{blue}%~%F{default}";
-local SM_CLOCK="${return_code}%F{default}%W% / %T";
+local SM_CLOCK="${return_code}%F{default}%W   %T";
 
 sm_prompt() {
     if [ $SM_PROMPT_LINES -eq 2 ] ; then
