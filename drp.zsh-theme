@@ -27,7 +27,7 @@ sudo_color() {
 
 # custom zsh prompt
 local return_code="%(?..%F{red}%? - )%F{default}";
-local SM_PREFIX="%F{default}╭─";
+local SM_PREFIX="%F{default}╭─♐";
 local SM_MIDFIX="%F{default}├─ "
 local SM_SUFFIX="%F{default}╰───%F{default} ";
 local SM_USER="%F{$(sudo_color)}%n%F{white}@%m";
