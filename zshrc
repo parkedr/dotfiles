@@ -9,12 +9,15 @@ export ZSH="${HOME}/.oh-my-zsh"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-POWERLEVEL9K_MODE='nerdfont-complete'
+#POWERLEVEL9K_MODE='nerdfont-complete'
 #POWERLEVEL9K_MODE='awesome-fontconfig'
+#POWERLEVEL9K_MODE='awesome-patched'
 #ZSH_THEME="powerlevel9k/powerlevel9k"
-ZSH_THEME="random"
+#ZSH_THEME="powerlevel10k/powerlevel10k"
+#ZSH_THEME="random"
 #ZSH_THEME="agnoster"
-
+#ZSH_THEME="sm"
+ZSH_THEME="drp"
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
@@ -73,7 +76,7 @@ plugins=(
   osx
   fzf
 #  colored-man-pages
-#  iterm2
+  iterm2
 #  ubuntu
 #  vi-mode
   bgnotify
