@@ -27,7 +27,7 @@ sudo_color() {
 
 # custom zsh prompt
 local return_code="%(?..%F{red}%? - )%F{default}";
-local SM_PREFIX="%F{default}╭─♐";
+local SM_PREFIX="%F{default}╭─";
 local SM_MIDFIX="%F{default}├─ "
 local SM_SUFFIX="%F{default}╰───%F{default} ";
 local SM_USER="%F{$(sudo_color)}%n%F{white}@%m";
@@ -49,7 +49,7 @@ PROMPT=$(sm_prompt)
 RPROMPT="$SM_CLOCK";
 
 # update vcs values
-ZSH_THEME_GIT_PROMPT_PREFIX="%F{white}  %F{default}";
+ZSH_THEME_GIT_PROMPT_PREFIX="%F{white}  %F{default}";
 ZSH_THEME_GIT_PROMPT_SUFFIX="";
 ZSH_THEME_GIT_PROMPT_DIRTY=$(pictos_or_smileys 0);
 ZSH_THEME_GIT_PROMPT_CLEAN=$(pictos_or_smileys 1);
@@ -60,3 +60,8 @@ ZSH_THEME_GIT_PROMPT_RENAMED="%F{blue}‣%F{default} ";
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%F{magenta}✦%F{default} ";
 ZSH_THEME_GIT_PROMPT_UNMERGED="%F{magenta}✖%F{default} ";
 
+
+
+
+# font awesome chars
+#   
